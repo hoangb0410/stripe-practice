@@ -28,10 +28,3 @@
    ```bash
    stripe listen --forward-to localhost:4242/webhook
    ```
-
-## Endpoints
-
-- `GET /products` - list products + prices from Stripe
-- `POST /customers` - create customer `{ "email": "..." }`
-- `POST /checkout` - create checkout session `{ "priceId": "...", "customerId": "cus_..." }`
-- `POST /webhook` - Stripe webhook endpoint (use raw body)
